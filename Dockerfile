@@ -16,6 +16,9 @@ RUN apt-get -y install tesseract-ocr
 COPY . /app
 WORKDIR /app
 
+# Uncomment following line if you want to copy your model into the image
+# RUN mv lang.traineddata /usr/share/tesseract-ocr/4.00/tessdata
+
 RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
 
