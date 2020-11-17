@@ -16,8 +16,6 @@ RUN apt-get -y install tesseract-ocr
 COPY . /app
 WORKDIR /app
 
-#RUN mv <lang_name>.traineddata /usr/share/tesseract-ocr/4.00/tessdata
-
 RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
 
