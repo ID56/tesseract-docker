@@ -1,0 +1,6 @@
+*/env*
+*/images*
+*/__pycache__*
+*/client.py*
+*/.gitignore*
+*/README.md*
